@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "Poetn";
+    src: url("../fonts/Poetn.ttf");
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: transparent; 
+}
+.fondo {
+    background-image: url(../img/images\ \(1\).jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "inicio contacto servicios"
+        "inicio informacion productos";
+    gap: 0;
+}
+
+.inicio {
+    grid-area: inicio;
+    background-color: pink;
+}
+
+.informacion {
+    grid-area: informacion;
+    background-color: blue;
+}
+
+.servicios {
+    grid-area: servicios;
+    background-color: red;
+}
+
+.productos {
+    grid-area: productos;
+    background-color: rgb(166, 255, 0);
+}
+
+.contacto {
+    grid-area: contacto;
+    background-color: rgb(190, 33, 221);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ .blum, .servicos, .contactanos, .informaciones, .ventadeproductos {
+    position: absolute;
+    font-size: 30px;
+    font-family: "Poetn";
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.centrado {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blum {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contenetor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.bienvenida {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.marron {
+    height: 105%;
+}
+
+.servicos {
+    top: 10%;
+    left: 50%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
+}
+
+.contactanos {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.informaciones {
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.ventadeproductos {
+    top: 15%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.infro {
+    margin-top: 60px;
+    margin-left: -50px;
+}
+.productosvida {
+    background-image: url(../img/c61d95738bf8cc5c8e9863bd8d638a78.jpg);
+
+}
+.mover {
+    margin-left: -350px;
+}
+.card {
+    margin-top: 20px;
+    width: 50px;
+}
+.tarjeta2 {
+width: 50px;
+}
+.infoconte {
+    margin-top: 50px;
+}
+.infofondo {
+    background-image: url(../img/fondomorado.jpg);
+}
+.atendemos {
+    color: rgb(0, 0, 0);
+    margin-top: -10px;
+    margin-left: 450px;
+    font-family: "Poetn";
+    font-size: 1.5rem;
+}
+.servi {
+    color: rgb(255, 0, 0);
+    margin-top: 70px;
+    margin-left: 500px;
+    font-family: "Poetn";
+    font-size: 1.5rem;
+}
+.zapasnovedades {
+    width: 500px;
+
+    justify-content: center;
+    align-items: center;
+
+}
+.fondoservi {
+    background-image: url(../img/fondoblanco.jpg);
+}
+.descuento {
+    width: 250px;
+    margin-left: 500px;
+}
+    @media screen and (max-width: 480px) {
+        .contenedor {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-areas: 
+                "inicio"
+                "informacion"
+                "productos"
+                "servicios"
+                "contacto";
+        }
+    
+        .container {
+            height: auto;
+        }
+    
+        .container img {
+            height: auto;
+            max-width: 100%;
+        }
+    
+        .centrado, .blum, .bienvenida, .servicos, .contactanos, .informaciones, .ventadeproductos {
+            font-size: 20px;
+            padding: 5px;
+            text-align: center;
+        }
+    
+        .centrado, .blum, .bienvenida {
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .servicos, .contactanos, .informaciones, .ventadeproductos {
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .infro {
+            margin-top: 20px;
+            margin-left: 0;
+        }
+    
+        .marron {
+            height: auto; 
+        }
+    
+        .rosadou {
+            width: 100%;
+            height: auto; 
+        }
+    }
