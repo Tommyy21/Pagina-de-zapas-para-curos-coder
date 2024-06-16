@@ -192,6 +192,31 @@ width: 50px;
     width: 250px;
     margin-left: 500px;
 }
+.apa {
+    text-decoration: dashed;
+    padding-right: 40px;
+    margin-top: 13px;
+    font-size: 20px;
+    font-family: "Poetn";  
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    color: white;
+}
+.aoa {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;  
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    font-size: 30px;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+}
     @media screen and (max-width: 480px) {
         .contenedor {
             grid-template-columns: 1fr;
